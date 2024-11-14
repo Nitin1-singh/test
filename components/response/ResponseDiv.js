@@ -48,6 +48,7 @@ export function ResponseModal({ questions, score = 0, userResponse }) {
           {questions?.map((val, index) => (
             <Questions
               key={index}
+              questionDetail={val?.questionName}
               explanation={val?.explanation}
               questionNo={index + 1}
               userResponse={userResponse[index]}

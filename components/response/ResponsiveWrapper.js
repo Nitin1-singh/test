@@ -27,21 +27,19 @@ export function ResponseWrapper({ quizName }) {
     }
   }, []);
   return (
-    <Suspense fallback={<div>Loading...</div>}>
-      <div className="overflow-y-auto">
-        <h1 className="text-center text-3xl my-4">All Response</h1>
-        {responses?.map((val, index) => {
-          return (
-            <ResponseDiv
-              key={index}
-              userResponse={val?.responses}
-              questions={val?.questions}
-              quizName={val?.quizName}
-              score={val?.score}
-            />
-          );
-        })}
-      </div>
-    </Suspense>
+    <div className="overflow-y-auto">
+      <h1 className="text-center text-3xl my-4">All Response</h1>
+      {responses?.map((val, index) => {
+        return (
+          <ResponseDiv
+            key={index}
+            userResponse={val?.responses}
+            questions={val?.questions}
+            quizName={val?.quizName}
+            score={val?.score}
+          />
+        );
+      })}
+    </div>
   );
 }

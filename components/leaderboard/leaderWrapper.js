@@ -6,7 +6,7 @@ import { Avatar } from "antd";
 import { useEffect, useState } from "react";
 
 export function LeaderBoardWrapper() {
-  const [data, setData] = useState([1, 2]);
+  const [data, setData] = useState([]);
   useEffect(() => {
     const ans = async () => {
       const res = await axiosInstance("/quiz/get-leaderboard");

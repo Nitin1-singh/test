@@ -110,7 +110,7 @@ export default function ExamPage({ params }) {
             setVal={setVal}
             val={val}
             setCurrentQuestionNo={setCurrentQuestionNo}
-            questionDetail={data[currentQuestionNo]?.question_name}
+            questionDetail={data[currentQuestionNo]?.questionName}
             questionNo={currentQuestionNo + 1}
             options={data[currentQuestionNo]?.options}
             type={data[currentQuestionNo]?.type}
