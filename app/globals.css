@@ -1,27 +1,32 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+/* app/globals.css */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --font-poppins: "Poppins", sans-serif;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.drop-down,
+.ant-dropdown-menu {
+  padding: 0px !important;
+  border-radius: 5px !important;
 }
-
+.drop-down,
+.ant-dropdown-menu-item {
+  border-radius: 0px !important;
+}
+.ant-modal {
+  width: 100% !important;
+  height: 100vh !important;
+  border-radius: 0px !important;
+  top: 0px !important;
+  padding: 0px !important;
+  max-width: 100% !important;
+  margin: 0px !important;
+}
+.ant-modal-content {
+  height: 100vh !important;
+  border-radius: 0px !important;
+}
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+  font-family: var(--font-poppins);
 }
