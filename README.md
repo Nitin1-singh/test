@@ -2,9 +2,11 @@ This is a next js react quiz app assignment by campus ready
 
 ## Preview of APP
 
-- Response tab and other option when youc lick on profile icon at top right
+- Response tab and other option when you click on profile icon at top right
+- 
   ![Screenshot from 2024-11-14 19-54-39](https://github.com/user-attachments/assets/5b462ae9-6b7e-4279-b6b3-ebaca0330a46)
 - Leaderboard
+- 
   ![Screenshot from 2024-11-14 19-54-18](https://github.com/user-attachments/assets/81da41b9-cb47-4c0e-b9a2-bdbe20a56718)
 - Exam Tab
   ![Screenshot from 2024-11-14 19-53-59](https://github.com/user-attachments/assets/6deab2c5-3b70-4585-9b24-c6a82b0c6540)
