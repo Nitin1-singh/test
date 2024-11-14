@@ -32,7 +32,9 @@ export function MainSide({
           <Radio.Group value={val} onChange={onChange}>
             <Space direction="vertical">
               {options?.map((val, index) => (
-                <Radio value={index}>{val}</Radio>
+                <Radio key={index} value={index}>
+                  {val}
+                </Radio>
               ))}
             </Space>
           </Radio.Group>

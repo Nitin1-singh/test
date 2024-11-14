@@ -32,6 +32,7 @@ export function ResponseWrapper({ quizName }) {
       {responses?.map((val, index) => {
         return (
           <ResponseDiv
+            key={index}
             userResponse={val?.responses}
             questions={val?.questions}
             quizName={val?.quizName}

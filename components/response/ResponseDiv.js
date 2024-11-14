@@ -47,6 +47,7 @@ export function ResponseModal({ questions, score = 0, userResponse }) {
         <div className="overflow-y-auto my-5 h-[500px]">
           {questions?.map((val, index) => (
             <Questions
+              key={index}
               explanation={val?.explanation}
               questionNo={index + 1}
               userResponse={userResponse[index]}
@@ -96,7 +97,7 @@ export function Questions({
             <Radio.Group value={correct_option}>
               <Space direction="vertical">
                 {options?.map((val, index) => (
-                  <div className="flex flex-row items-center">
+                  <div key={index} className="flex flex-row items-center">
                     <Radio value={index}>{val}</Radio>
                     {index === userResponse?.val ? (
                       <SiTicktick size={20} color="green" />

@@ -42,6 +42,7 @@ export function RightSide({
           {data?.map((val, index) => {
             return (
               <div
+                key={index}
                 onClick={() => {
                   setData((prev) => {
                     const ans = prev?.map((user, index2) =>

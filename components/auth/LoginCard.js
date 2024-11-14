@@ -84,7 +84,7 @@ export function LoginCard() {
             </Form.Item>
           </div>
           <p>
-            Don't have a account{" "}
+            Don&rsquo;t have a account{" "}
             <Link className="underline" href={"/signUp"}>
               Sign Up
             </Link>

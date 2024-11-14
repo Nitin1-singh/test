@@ -18,8 +18,8 @@ export function LeaderBoardWrapper() {
     <>
       <p className="text-3xl text-center my-5">Leaderboard</p>
       <div className="flex flex-col gap-5">
-        {data?.map((val) => (
-          <LeaderItem score={val?.totalMaxScore} name={val?.name} />
+        {data?.map((val, index) => (
+          <LeaderItem key={index} score={val?.totalMaxScore} name={val?.name} />
         ))}
       </div>
     </>
